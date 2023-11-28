@@ -15,10 +15,6 @@ local function validate()
         Logger:warn("java is required. Install it to use this plugin.")
         return false
     end
-    if vim.fn.executable("nsxiv") == 0 and validate_image_function() then
-        Logger:warn("nsxiv is required. Install it to use this plugin.")
-        return false
-    end
     return true
 end
 
